@@ -1,0 +1,22 @@
+.burger {
+  width: 35em;
+  margin: auto;
+  height: 25em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) and (min-height: 401px) {
+  .burger {
+    width: 25em;
+    height: 20em;
+  }
+}
+
+@media (max-width: 500px) and (min-height: 401px) {
+  .burger {
+    width: 20em;
+    height: 20em;
+  }
+}
