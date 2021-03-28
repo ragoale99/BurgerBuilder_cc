@@ -8,7 +8,7 @@
 .build-control button {
   display: block;
   font: inherit;
-  padding: 0.6em;
+  padding: 1em;
   margin: 0 1em;
   width: 10em;
   border: 1px solid #aa6817;
@@ -58,5 +58,12 @@
 }
 
 .price {
-  margin-left: 5em;
+	font-size: 1.2rem;
+  margin-left: 10em;
+}
+
+@media (max-width: 1268px) {
+	.build-control button {
+		padding: 0.3em;
+	}
 }
