@@ -70,6 +70,10 @@ export default class BurgerBuilder extends Component {
     this.setState({ purchasing: true });
   };
 
+	purchcaseCancelHandler = () => {
+		this.setState({purchasing: false});
+	}
+
   render() {
     const disabledInfo = {
       ...this.state.ingredients,
@@ -79,7 +83,7 @@ export default class BurgerBuilder extends Component {
     } // disabledInfo = {salad: false, meat: true ...} con true = corrisp. bottone "Togli" da disabilitare
     return (
       <Aux>
-        <Modal show={this.state.purchasing}>
+        <Modal show={this.state.purchasing} closeModal={this.purchcaseCancelHandler}>
           <OrderSummary ingredients={this.state.ingredients} />
         </Modal>
         <Burger ingredients={this.state.ingredients} />
