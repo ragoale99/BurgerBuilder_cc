@@ -16,7 +16,8 @@ export default function OrderSummary(props) {
       <h3>Ordine</h3>
       <h4>Ingredienti:</h4>
       <ul>{ingredientsSummary}</ul>
-			<Button btnType="danger" clicked={props.cancel}>CANCELLA L'ORDINE</Button>
+			<p><strong>Prezzo totale: {props.price.toFixed(2)}€</strong></p>
+			<Button btnType="danger" clicked={props.cancel}>INDIETRO</Button>
 			<Button btnType="success" clicked={props.continue}>CONTINUA</Button>
     </Aux>
   );
