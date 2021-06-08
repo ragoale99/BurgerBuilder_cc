@@ -1,6 +1,6 @@
-import React from "react";
-import "./Burger.css";
-import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
+import React from 'react';
+import './Burger.css';
+import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 export default function Burger(props) {
 	let transformedIngredients = Object.keys(props.ingredients)
@@ -33,10 +33,10 @@ export default function Burger(props) {
 		transformedIngredients = <p>Il panino è vuoto, metti degli ingredienti</p>;
 	}
 	return (
-		<div className="burger">
-			<BurgerIngredient type="bread-top" /> {/* parte di pane sopra */}
+		<div className='burger'>
+			<BurgerIngredient type='bread-top' /> {/* parte di pane sopra */}
 			{transformedIngredients} {/* ingredienti dinamici */}
-			<BurgerIngredient type="bread-bottom" /> {/* parte di pane sotto */}
+			<BurgerIngredient type='bread-bottom' /> {/* parte di pane sotto */}
 		</div>
 	);
 }
